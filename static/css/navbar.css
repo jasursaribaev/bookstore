@@ -1,0 +1,24 @@
+.header {
+    background-color: #F8F9FA;
+}
+.container {
+    width: 1111px;
+    margin: 0 auto 25px auto;
+    padding: 0 15px;
+}
+.nav-menu {
+    display: flex;
+    gap: 0 50px;
+    padding: 20px 0;
+}
+.nav-menu__link {
+    text-decoration: none;
+}
+.menu-list {
+    display: flex;
+    gap: 0 20px;
+}
+.menu-list__link {
+    text-decoration: none;
+    color: #000;
+}

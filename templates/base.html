@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    {%block css_files%}
+    {%endblock%}
+    <title>
+        {%block title%}
+        {%endblock%}
+    </title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-menu">
+                <a class="nav-menu__link" href="#">
+                    Logo
+                </a>
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="{% url 'books:home' %}">Home</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="{% url 'books:about' %}">About</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a class="menu-list__link" href="{% url 'books:contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {%block content%}
+    {%endblock%}
+    {%block script_files%}
+    {%endblock%}
+</body>
+</html>
